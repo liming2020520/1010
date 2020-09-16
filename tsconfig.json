@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "importHelpers": true,
+    "outDir": "./dist",
+    "target": "ES5",
+    "lib": ["ES2015", "DOM", "ES2017"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "typeRoots": ["./types"]
+  }
+}

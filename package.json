@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "笔试题",
+  "main": "webpack.config.js",
+  "scripts": {
+    "myinterview": "webpack-dev-server --open"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "clean-webpack-plugin": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.code.tencent.com/jonasyao/interview.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>【娱乐应用 web 前端开发支持工程师】笔试题1</title>
+  </head>
+  <body style="padding: 30px;">
+    <h2>银行柜台业务</h2>
+    <div>
+      <!-- 存取款 -->
+      <label for="user_id_ipt">请输入用户ID(6位数，例如 000001)</label
+      ><input
+        type="text"
+        id="user_id_ipt"
+        placeholder="用户ID"
+      /><br />
+      <label for="money_ipt">输入整数值，带-号表示取钱</label
+      ><input type="text" id="money_ipt" placeholder="存款/取款" /><br />
+      <button id="confirm_btn">确定</button>
+    </div>
+    <div>
+      <!-- 查询 -->
+      <input
+        type="text"
+        id="query_user_id_ipt"
+        placeholder="输入用户id以查询"
+      />
+      <button id="btn_query">查询存款信息</button>
+    </div>
+    <div>
+      <label for="result_textarea">输出结果</label>
+      <textarea id="result_textarea" cols="30" rows="10"></textarea>
+    </div>
+    <pre>
+      【题目要求】
+      存取款 --
+        例如：用户ID为000001，先存100，再取50，余额50；再取51，result_textarea中提示 '余额不足';
+        例如：用户ID为000002，先存100，再取1，余额99;
+      查询用户余额 --
+        支持批量查询: 例如输入 '0000001';'000002', 输出 [{userId:"0000001", money:50},{userId:"0000002", money:99}]
+        支持全量查询: 输入为空，输出全部用户和余额，输出(result_textarea)格式：
+          {
+            totalUser: 2,
+            totalMoney:149,
+            list:[{userId:"0000001", money:50},{userId:"0000002", money:99}]
+          }
+      
+      边界与异常情况 --
+        用户ID只能为6位数，其他情况提示 '请输入有效的用户ID'；存取款数额为 -99999 ～ 99999，其他情况提示 '请输入有效的存取款额'
+      其他边界情况与异常，自行处理。
+    </pre>
+  </body>
+</html>

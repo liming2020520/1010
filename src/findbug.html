@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>【娱乐应用 web 前端开发支持工程师】笔试题2</title>
+  </head>
+  <body style="padding: 30px;">
+    <div>
+      <label for="game_id_ipt">请输入游戏ID，目前仅支持-1</label
+      ><input
+        type="text"
+        id="game_id_ipt"
+        placeholder="-1用来测试"
+        value="-1"
+      /><br />
+      <label for="version_num_ipt">请输入版本号，目前支持330～350</label
+      ><input
+        type="text"
+        id="version_num_ipt"
+        placeholder="335"
+        value="335"
+      /><br />
+      <label for="platform_ipt">输入平台，支持ios android</label
+      ><input
+        type="text"
+        id="platform_ipt"
+        placeholder="ios/android"
+        value="0"
+      />
+    </div>
+    <div>
+      <input
+        type="text"
+        id="key_ipt"
+        placeholder="输入配置key值以获取配置"
+        value="rewardedVideoAd.MSG.ERROR"
+      />
+      <button id="btn_1">获取配置</button>
+    </div>
+    <div>
+      <label for="result_textarea">结果</label>
+      <textarea id="result_textarea" cols="30" rows="10"></textarea>
+    </div>
+  </body>
+</html>
